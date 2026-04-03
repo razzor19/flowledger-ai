@@ -11,7 +11,7 @@ type SubTab = 'overview' | 'groups' | 'activity';
 export default function SplitScreen() {
   const {
     user, friends, splitGroups, sharedExpenses, settlements,
-    getBalanceWith, getNetBalance, getFriendById, getGroupExpenses,
+    getBalanceWith, getFriendById, getGroupExpenses,
     getGroupBalances, isPrivacyMode
   } = useAppContext();
 
@@ -25,7 +25,6 @@ export default function SplitScreen() {
 
   if (!user) return null;
 
-  const netBalance = getNetBalance();
   const currency = user.currency;
 
   // Split friends into owe-me and I-owe
