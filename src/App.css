@@ -1,0 +1,12 @@
+.app-content {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.safe-area-top {
+  height: env(safe-area-inset-top, 40px);
+  background-color: var(--bg-primary);
+  width: 100%;
+}
