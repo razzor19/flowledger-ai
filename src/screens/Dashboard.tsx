@@ -65,7 +65,7 @@ export default function Dashboard() {
   }
 
   // --- Recent transactions ---
-  const recentTxs = transactions.slice(0, 5);
+
 
   return (
     <div className="screen-container bg-primary animate-slide-up" style={{ padding: '20px 20px 80px 20px' }}>

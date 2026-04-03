@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useAppContext } from '../context/AppContext';
-import { Zap, TrendingDown, TrendingUp, AlertCircle, CheckCircle, Bot } from 'lucide-react';
+import { Zap, TrendingDown, TrendingUp, CheckCircle, Bot } from 'lucide-react';
 import AIChatModal from '../components/AIChatModal';
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
@@ -86,7 +86,6 @@ export default function Report() {
 
   // --- AI Insights ---
   const savingsGap = budget.savingsTarget - (budget.income - totalSpent);
-  const topOverspend = overBudgetCats[0];
 
   return (
     <div className="screen-container animate-slide-up" style={{ padding: '0 20px 80px 20px' }}>
